@@ -583,6 +583,11 @@ when
 -spec 'maps:update_with'(Key :: term(), fun(), Init :: term(), map()) -> map().
 'maps:update_with'(_, _, _, _) -> error(eqwalizer_specs).
 
+%% -------- mnesia --------
+
+-spec 'mnesia:table'() -> [term()].
+'mnesia:table'() -> error(eqwalizer_specs).
+
 %% -------- orddict --------
 
 -spec 'orddict:new'() -> orddict:orddict(none(), none()).
